@@ -28,7 +28,7 @@ No se requiere atribución, pero se agradece reconocer a los fotógrafos.
    - Visita la URL que te genera GitHub Pages
 
 ## ✏️ Autor
-Proyecto desarrollado por **[Tu Nombre]** para la asignatura de [Nombre de la materia] - [Universidad].
+Proyecto desarrollado por **[Carlos Lopez]** para la asignatura de [Mixologia] - [Uni Horizonte].
 
 ## 📅 Fecha
 Agosto 2025
