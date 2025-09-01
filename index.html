@@ -7,141 +7,134 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Menú fijo -->
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li class="dropdown">
-          <a href="#recetas" class="dropbtn">Recetas</a>
-          <div class="dropdown-content">
-            <a href="#mojito">Mojito</a>
-            <a href="#piña-colada">Piña Colada</a>
-            <a href="#margarita">Margarita</a>
-            <a href="#tropical">Cóctel Tropical</a>
-            <a href="#limonada">Limonada de Coco</a>
-            <a href="#smoothie">Smoothie de Frutas</a>
-          </div>
-        </li>
-        <li><a href="#tecnicas">Técnicas</a></li>
-        <li><a href="#tips">Tips</a></li>
-      </ul>
-    </nav>
+  <header class="hero">
+    <div class="overlay"></div>
+    <h1>Mixología Tropical</h1>
+    <p>Cócteles con y sin alcohol, técnicas y tips</p>
   </header>
 
-  <!-- Portada -->
-  <section id="inicio" class="hero">
-    <div class="hero-text">
-      <h1>Bienvenido a la Mixología Tropical</h1>
-      <p>Descubre recetas refrescantes y técnicas para preparar cócteles únicos</p>
-    </div>
-  </section>
+  <main>
+    <section id="recetas">
+      <h2>Recetas de Cócteles</h2>
 
-  <!-- Recetas -->
-  <section id="recetas" class="recetas">
-    <h2>Recetas de Cócteles</h2>
-    <div class="receta" id="mojito">
-      <img src="img/recetas/mojito.jpg" alt="Mojito">
-      <h3>Mojito</h3>
+      <article>
+        <img src="img/recetas/mojito.jpg" alt="Mojito">
+        <h3>Mojito</h3>
+        <ul>
+          <li>50 ml ron blanco</li>
+          <li>1 lima</li>
+          <li>2 cucharaditas de azúcar</li>
+          <li>Hierbabuena fresca</li>
+          <li>Soda</li>
+        </ul>
+        <ol>
+          <li>Macerar la lima con azúcar.</li>
+          <li>Añadir hierbabuena y ron.</li>
+          <li>Completar con soda y hielo.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/pinacolada.jpg" alt="Piña Colada">
+        <h3>Piña Colada</h3>
+        <ul>
+          <li>60 ml ron blanco</li>
+          <li>90 ml jugo de piña</li>
+          <li>30 ml crema de coco</li>
+        </ul>
+        <ol>
+          <li>Batir todos los ingredientes con hielo.</li>
+          <li>Servir en vaso alto y decorar con piña.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/margarita.jpg" alt="Margarita">
+        <h3>Margarita</h3>
+        <ul>
+          <li>50 ml tequila</li>
+          <li>25 ml triple sec</li>
+          <li>25 ml jugo de lima</li>
+        </ul>
+        <ol>
+          <li>Agitar con hielo.</li>
+          <li>Servir en copa escarchada con sal.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/tropical-sin-alcohol.jpg" alt="Cóctel Tropical sin alcohol">
+        <h3>Cóctel Tropical sin alcohol</h3>
+        <ul>
+          <li>100 ml jugo de naranja</li>
+          <li>50 ml jugo de piña</li>
+          <li>Granadina</li>
+        </ul>
+        <ol>
+          <li>Servir jugos en vaso con hielo.</li>
+          <li>Añadir un toque de granadina.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/limonada-coco.jpg" alt="Limonada de Coco">
+        <h3>Limonada de Coco</h3>
+        <ul>
+          <li>100 ml jugo de limón</li>
+          <li>100 ml leche de coco</li>
+          <li>Hielo</li>
+        </ul>
+        <ol>
+          <li>Licuar todos los ingredientes.</li>
+          <li>Servir frío.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/smoothie.jpg" alt="Smoothie de Frutas">
+        <h3>Smoothie de Frutas</h3>
+        <ul>
+          <li>Fresas, mango y banano</li>
+          <li>Yogur natural</li>
+          <li>Miel</li>
+        </ul>
+        <ol>
+          <li>Licuar frutas con yogur y miel.</li>
+          <li>Servir en vaso alto.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="tecnicas">
+      <h2>Técnicas de Coctelería</h2>
+      <div class="tecnica">
+        <img src="img/tecnicas/agitar.jpg" alt="Agitar">
+        <p>Agitar: mezcla rápida en coctelera.</p>
+      </div>
+      <div class="tecnica">
+        <img src="img/tecnicas/batir.jpg" alt="Batir">
+        <p>Batir: lograr textura suave con licuadora.</p>
+      </div>
+      <div class="tecnica">
+        <img src="img/tecnicas/decorar.jpg" alt="Decorar">
+        <p>Decorar: uso de frutas y hierbas para presentación.</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Tips de Seguridad e Higiene</h2>
       <ul>
-        <li>50 ml ron blanco</li>
-        <li>6 hojas de hierbabuena</li>
-        <li>2 cucharaditas de azúcar</li>
-        <li>30 ml jugo de lima</li>
-        <li>Soda al gusto</li>
+        <li>Usar siempre frutas frescas y utensilios limpios.</li>
+        <li>No mezclar alcohol con medicamentos.</li>
+        <li>Mantener la cadena de frío de los ingredientes.</li>
       </ul>
-      <p><strong>Preparación:</strong> Macera la hierbabuena con el azúcar y jugo de lima. Añade ron, hielo y completa con soda.</p>
-    </div>
+    </section>
+  </main>
 
-    <div class="receta" id="piña-colada">
-      <img src="img/recetas/piña_colada.jpg" alt="Piña Colada">
-      <h3>Piña Colada</h3>
-      <ul>
-        <li>60 ml ron blanco</li>
-        <li>90 ml jugo de piña</li>
-        <li>30 ml crema de coco</li>
-      </ul>
-      <p><strong>Preparación:</strong> Licúa todos los ingredientes con hielo hasta obtener una mezcla cremosa.</p>
-    </div>
-
-    <div class="receta" id="margarita">
-      <img src="img/recetas/margarita.jpg" alt="Margarita">
-      <h3>Margarita</h3>
-      <ul>
-        <li>50 ml tequila</li>
-        <li>25 ml triple sec</li>
-        <li>25 ml jugo de limón</li>
-      </ul>
-      <p><strong>Preparación:</strong> Agita los ingredientes con hielo y sirve en copa escarchada con sal.</p>
-    </div>
-
-    <div class="receta" id="tropical">
-      <img src="img/recetas/tropical.jpg" alt="Cóctel Tropical sin alcohol">
-      <h3>Cóctel Tropical sin alcohol</h3>
-      <ul>
-        <li>100 ml jugo de naranja</li>
-        <li>50 ml jugo de piña</li>
-        <li>30 ml granadina</li>
-      </ul>
-      <p><strong>Preparación:</strong> Mezcla los jugos y añade la granadina al final para un efecto degradado.</p>
-    </div>
-
-    <div class="receta" id="limonada">
-      <img src="img/recetas/limonada_coco.jpg" alt="Limonada de Coco">
-      <h3>Limonada de Coco</h3>
-      <ul>
-        <li>200 ml leche de coco</li>
-        <li>100 ml agua fría</li>
-        <li>Jugo de 1 limón</li>
-        <li>2 cucharadas de azúcar</li>
-      </ul>
-      <p><strong>Preparación:</strong> Licúa todo con hielo y sirve bien frío.</p>
-    </div>
-
-    <div class="receta" id="smoothie">
-      <img src="img/recetas/smoothie.jpg" alt="Smoothie de Frutas">
-      <h3>Smoothie de Frutas</h3>
-      <ul>
-        <li>1 banana</li>
-        <li>100 g fresas</li>
-        <li>100 ml jugo de naranja</li>
-      </ul>
-      <p><strong>Preparación:</strong> Licúa todo hasta obtener una mezcla suave y homogénea.</p>
-    </div>
-  </section>
-
-  <!-- Técnicas -->
-  <section id="tecnicas" class="tecnicas">
-    <h2>Técnicas de Coctelería</h2>
-    <div class="tecnica">
-      <img src="img/tecnicas/agitar.jpg" alt="Agitar">
-      <p><strong>Agitar:</strong> Usa una coctelera para mezclar ingredientes y enfriar.</p>
-    </div>
-    <div class="tecnica">
-      <img src="img/tecnicas/batir.jpg" alt="Batir">
-      <p><strong>Batir:</strong> Ideal para cócteles cremosos y frutales.</p>
-    </div>
-    <div class="tecnica">
-      <img src="img/tecnicas/mezclar.jpg" alt="Mezclar">
-      <p><strong>Mezclar:</strong> Técnica suave para preservar texturas.</p>
-    </div>
-  </section>
-
-  <!-- Tips -->
-  <section id="tips" class="tips">
-    <h2>Tips de Seguridad e Higiene</h2>
-    <ul>
-      <li>Lava siempre las frutas antes de usarlas.</li>
-      <li>Utiliza hielo limpio y de buena calidad.</li>
-      <li>Mantén tus utensilios desinfectados.</li>
-      <li>Consume responsablemente las bebidas con alcohol.</li>
-    </ul>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Mixología Tropical. Diseñado para GitHub Pages.</p>
-  </footer>
-
+  <button id="btnTop">⬆</button>
+  <script>
+    const btn = document.getElementById("btnTop");
+    btn.addEventListener("click", () => window.scrollTo({top:0,behavior:"smooth"}));
+  </script>
 </body>
 </html>
