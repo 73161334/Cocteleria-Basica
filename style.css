@@ -1,120 +1,133 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff;
+  background: #fffaf0;
   color: #333;
 }
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
   z-index: 1000;
 }
 
-.navbar {
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+nav ul.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
   gap: 20px;
 }
 
-.navbar a, .dropbtn {
-  color: #fff;
+nav ul.menu li a {
+  color: white;
   text-decoration: none;
-  padding: 10px 15px;
-  cursor: pointer;
+  transition: color 0.3s;
 }
 
-.dropdown {
-  position: relative;
+nav ul.menu li a:hover {
+  color: #333;
 }
 
-.dropdown-content {
+.submenu-items {
   display: none;
   position: absolute;
-  background: rgba(0, 0, 0, 0.8);
-  min-width: 160px;
-}
-
-.dropdown-content a {
-  display: block;
+  background: white;
   padding: 10px;
-  color: #fff;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.dropdown:hover .dropdown-content {
+.submenu-items li a {
+  color: #333 !important;
+  display: block;
+  padding: 5px 10px;
+}
+
+.submenu-items li a:hover {
+  background: #feb47b;
+  color: white !important;
+}
+
+.submenu-items.show {
   display: block;
 }
 
-/* Portada */
-.hero {
-  background: url('img/portada.jpg') no-repeat center center/cover;
-  position: relative;
+.portada {
   height: 100vh;
+  background: url('img/portada.jpg') center/cover no-repeat;
+  color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 20px;
 }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-}
-
-.hero h1, .hero p {
-  position: relative;
-  color: #fff;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-}
-
-/* Secciones */
 section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+  padding: 80px 20px;
 }
 
-.receta, .tecnica {
-  margin-bottom: 40px;
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.receta img, .tecnica img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  transition: transform 0.3s ease;
+.recetas img, .tecnicas img {
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
-.receta img:hover, .tecnica img:hover {
+.recetas img:hover, .tecnicas img:hover {
   transform: scale(1.05);
 }
 
-/* Botón flotante */
-.btn-flotante {
+#btnTop {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #ff9800;
-  color: #fff;
+  background: #ff7e5f;
+  color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+#btnTop:hover {
+  background: #feb47b;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .navbar {
+  nav ul.menu {
     flex-direction: column;
+    background: #ff7e5f;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
   }
 }
