@@ -1,1 +1,140 @@
-<!DOCTYPE html><html><head><title>Mixología Tropical</title></head><body><h1>🍹 Mixología Tropical</h1></body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mixología Tropical</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <h1>Mixología Tropical</h1>
+    <p>Cócteles con y sin alcohol, técnicas y tips</p>
+  </header>
+
+  <main>
+    <section id="recetas">
+      <h2>Recetas de Cócteles</h2>
+
+      <article>
+        <img src="img/recetas/mojito.jpg" alt="Mojito">
+        <h3>Mojito</h3>
+        <ul>
+          <li>50 ml ron blanco</li>
+          <li>1 lima</li>
+          <li>2 cucharaditas de azúcar</li>
+          <li>Hierbabuena fresca</li>
+          <li>Soda</li>
+        </ul>
+        <ol>
+          <li>Macerar la lima con azúcar.</li>
+          <li>Añadir hierbabuena y ron.</li>
+          <li>Completar con soda y hielo.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/pinacolada.jpg" alt="Piña Colada">
+        <h3>Piña Colada</h3>
+        <ul>
+          <li>60 ml ron blanco</li>
+          <li>90 ml jugo de piña</li>
+          <li>30 ml crema de coco</li>
+        </ul>
+        <ol>
+          <li>Batir todos los ingredientes con hielo.</li>
+          <li>Servir en vaso alto y decorar con piña.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/margarita.jpg" alt="Margarita">
+        <h3>Margarita</h3>
+        <ul>
+          <li>50 ml tequila</li>
+          <li>25 ml triple sec</li>
+          <li>25 ml jugo de lima</li>
+        </ul>
+        <ol>
+          <li>Agitar con hielo.</li>
+          <li>Servir en copa escarchada con sal.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/tropical-sin-alcohol.jpg" alt="Cóctel Tropical sin alcohol">
+        <h3>Cóctel Tropical sin alcohol</h3>
+        <ul>
+          <li>100 ml jugo de naranja</li>
+          <li>50 ml jugo de piña</li>
+          <li>Granadina</li>
+        </ul>
+        <ol>
+          <li>Servir jugos en vaso con hielo.</li>
+          <li>Añadir un toque de granadina.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/limonada-coco.jpg" alt="Limonada de Coco">
+        <h3>Limonada de Coco</h3>
+        <ul>
+          <li>100 ml jugo de limón</li>
+          <li>100 ml leche de coco</li>
+          <li>Hielo</li>
+        </ul>
+        <ol>
+          <li>Licuar todos los ingredientes.</li>
+          <li>Servir frío.</li>
+        </ol>
+      </article>
+
+      <article>
+        <img src="img/recetas/smoothie.jpg" alt="Smoothie de Frutas">
+        <h3>Smoothie de Frutas</h3>
+        <ul>
+          <li>Fresas, mango y banano</li>
+          <li>Yogur natural</li>
+          <li>Miel</li>
+        </ul>
+        <ol>
+          <li>Licuar frutas con yogur y miel.</li>
+          <li>Servir en vaso alto.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section id="tecnicas">
+      <h2>Técnicas de Coctelería</h2>
+      <div class="tecnica">
+        <img src="img/tecnicas/agitar.jpg" alt="Agitar">
+        <p>Agitar: mezcla rápida en coctelera.</p>
+      </div>
+      <div class="tecnica">
+        <img src="img/tecnicas/batir.jpg" alt="Batir">
+        <p>Batir: lograr textura suave con licuadora.</p>
+      </div>
+      <div class="tecnica">
+        <img src="img/tecnicas/decorar.jpg" alt="Decorar">
+        <p>Decorar: uso de frutas y hierbas para presentación.</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>Tips de Seguridad e Higiene</h2>
+      <ul>
+        <li>Usar siempre frutas frescas y utensilios limpios.</li>
+        <li>No mezclar alcohol con medicamentos.</li>
+        <li>Mantener la cadena de frío de los ingredientes.</li>
+      </ul>
+    </section>
+  </main>
+
+  <button id="btnTop">⬆</button>
+  <script>
+    const btn = document.getElementById("btnTop");
+    btn.addEventListener("click", () => window.scrollTo({top:0,behavior:"smooth"}));
+  </script>
+</body>
+</html>
