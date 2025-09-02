@@ -1,75 +1,120 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #fff8f0;
+  font-family: Arial, sans-serif;
+  background: #fff;
   color: #333;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a, .dropbtn {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Portada */
 .hero {
   background: url('img/portada.jpg') no-repeat center center/cover;
+  position: relative;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: white;
+  justify-content: center;
   text-align: center;
-  position: relative;
 }
-.hero .overlay {
+
+.hero::before {
+  content: "";
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
+
 .hero h1, .hero p {
   position: relative;
-  z-index: 1;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
 }
+
+/* Secciones */
 section {
-  padding: 2em;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
 }
-h2 {
-  text-align: center;
-  color: #008080;
+
+.receta, .tecnica {
+  margin-bottom: 40px;
 }
-article, .tecnica {
-  background: white;
+
+.receta img, .tecnica img {
+  width: 100%;
+  max-width: 400px;
   border-radius: 12px;
-  padding: 1em;
-  margin: 1em auto;
-  max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
 }
-article:hover, .tecnica:hover {
-  transform: scale(1.03);
-}
-img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 1em;
-  transition: transform 0.3s;
-}
-img:hover {
+
+.receta img:hover, .tecnica img:hover {
   transform: scale(1.05);
 }
-#btnTop {
+
+/* Botón flotante */
+.btn-flotante {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #008080;
-  color: white;
+  background: #ff9800;
+  color: #fff;
   border: none;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 18px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-@media (max-width: 600px) {
-  h1 { font-size: 1.8em; }
-  h2 { font-size: 1.5em; }
-  article, .tecnica { margin: 1em; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
